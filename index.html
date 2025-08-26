@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grade_A Cyber Tech</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; line-height: 1.6; background: #f9f9f9; color: #333; }
+    nav { background: #222; color: #fff; padding: 15px 30px; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; }
+    nav h1 { font-size: 1.5em; }
+    nav ul { list-style: none; display: flex; gap: 20px; }
+    nav ul li a { color: #fff; text-decoration: none; transition: color 0.3s; }
+    nav ul li a:hover { color: #4CAF50; }
+    .hero { background: linear-gradient(to right, #4CAF50, #2e7d32); color: #fff; text-align: center; padding: 100px 20px; }
+    .hero h2 { font-size: 2.5em; margin-bottom: 20px; animation: fadeInDown 1s ease; }
+    .hero p { font-size: 1.2em; margin-bottom: 20px; animation: fadeInUp 1.2s ease; }
+    .hero a { background: #fff; color: #4CAF50; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold; transition: background 0.3s, color 0.3s; }
+    .hero a:hover { background: #222; color: #fff; }
+    section { padding: 60px 20px; max-width: 1000px; margin: auto; }
+    section h2 { text-align: center; margin-bottom: 30px; font-size: 2em; color: #222; }
+    .services { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+    .card { background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.3s; }
+    .card:hover { transform: translateY(-5px); }
+    .card h3 { margin-bottom: 15px; color: #4CAF50; }
+    .portfolio { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+    .portfolio img { width: 100%; border-radius: 10px; }
+    form { display: flex; flex-direction: column; gap: 15px; background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+    form input, form textarea, form button { padding: 10px; border: 1px solid #ccc; border-radius: 5px; }
+    form button { background: #4CAF50; color: #fff; border: none; cursor: pointer; transition: background 0.3s; }
+    form button:hover { background: #2e7d32; }
+    footer { text-align: center; padding: 20px; background: #222; color: #fff; margin-top: 40px; }
+    @keyframes fadeInDown { from { opacity: 0; transform: translateY(-20px);} to {opacity:1; transform: translateY(0);} }
+    @keyframes fadeInUp { from { opacity: 0; transform: translateY(20px);} to {opacity:1; transform: translateY(0);} }
+  </style>
+</head>
+<body>
+  <nav>
+    <h1>Grade_A Cyber Tech</h1>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="hero">
+    <h2>Welcome to Grade_A Cyber Tech 🚀</h2>
+    <p>Expert Frontend Development & Creative Graphic Design</p>
+    <a href="#contact">Hire Me</a>
+  </div>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I’m Abdulsamad Lawal, founder of <b>Grade_A Cyber Tech</b>. I specialize in crafting responsive, user-friendly websites and designing modern, eye-catching graphics. My goal is to help individuals and businesses grow online with a touch of creativity and professionalism. 🌍✨</p>
+  </section>
+  <section id="services">
+    <h2>Services</h2>
+    <div class="services">
+      <div class="card">
+        <h3>🌐 Frontend Development</h3>
+        <p>Responsive, modern websites using HTML, CSS, and JavaScript.</p>
+      </div>
+      <div class="card">
+        <h3>🎨 Graphic Design</h3>
+        <p>Logos, banners, flyers, and digital graphics that stand out.</p>
+      </div>
+      <div class="card">
+        <h3>📊 Branding</h3>
+        <p>Helping your business look professional with custom visual identity.</p>
+      </div>
+    </div>
+  </section>
+  <section id="portfolio">
+    <h2>Portfolio</h2>
+    <div class="portfolio">
+      <img src="https://via.placeholder.com/400x250" alt="Project 1">
+      <img src="https://via.placeholder.com/400x250" alt="Project 2">
+      <img src="https://via.placeholder.com/400x250" alt="Project 3">
+    </div>
+  </section>
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form action="https://formspree.io/f/xpwjzllb" method="POST">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      <label for="email">Your Email</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      <label for="message">Your Message</label>
+      <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+      <input type="hidden" name="_redirect" value="thank-you.html">
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+  <footer>
+    <p>&copy; 2025 Grade_A Cyber Tech. All rights reserved.</p>
+  </footer>
+</body>
+</html>
